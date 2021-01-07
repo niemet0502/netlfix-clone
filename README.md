@@ -28,3 +28,7 @@ npm start
 
 <br>
 <img width="90%" src="src/img/netflix-clone.PNG">
+
+<br/>
+<br/>
+Live: <a href="https://clone-netflix-marius.netlify.app">Live</a>
