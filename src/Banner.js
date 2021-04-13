@@ -3,6 +3,7 @@ import axios from "./axios";
 import requests from "./Request";
 import "./Banner.css";
 import logo from "./img/logo2.png"
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 
 function Banner() {
   const [movie, setMovie] = useState([]);
@@ -41,7 +42,13 @@ function Banner() {
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="banner__buttons">
-          <button className="banner__button">Play</button>
+          <button 
+            className="banner__button active"
+            style={{display: 'flex', alignItems: 'center'}}
+          >
+            <PlayArrowIcon />
+            <span  style={{marginLeft: '10px'}} >Play</span>
+          </button>
           <button className="banner__button">My List</button>
         </div>
         

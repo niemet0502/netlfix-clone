@@ -13,6 +13,7 @@
   font-size: 3rem;
   font-weight: 800;
   padding-bottom: 0.3rem;
+  margin-bottom: 10px;
 }
 
 .banner__description {
@@ -22,6 +23,10 @@
   font-size: 0.8rem;
   max-width: 360px;
   height: 80px;
+}
+.banner__button.active {
+  color: #000;
+  background-color: #fff;
 }
 
 .banner__button {
@@ -53,4 +58,7 @@
     rgba(37, 37, 37, 0.61),
     #111
   );
+}
+.banner__buttons {
+  display: flex;
 }
