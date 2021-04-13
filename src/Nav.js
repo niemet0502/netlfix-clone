@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Nav.css";
 import logo from "./img/logo.png"
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import SearchIcon from '@material-ui/icons/Search';
 
 function Nav() {
   const [show, handleShow] = useState(false);
@@ -30,8 +32,11 @@ function Nav() {
         <a href="">Latest</a>
         <a href="">My List</a>
       </div>
-      <div>
-      <CardGiftcardIcon />
+      <div style={{display: 'flex', alignItems: 'center'}}>
+      <SearchIcon className="nav_icon"/>
+      <a href="#!" style={{color: '#e5e5e5', textDecoration: 'none', marginRight: '15px'}}>DVD</a>
+      <CardGiftcardIcon className="nav_icon" />
+      <NotificationsIcon className="nav_icon" />
       <img
         className="nav__avatar"
         src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png"
