@@ -32,3 +32,6 @@
   transform: scale(1.09);
   opacity: 1;
 }
+.marginTop {
+  margin-top: -120px;
+}

@@ -15,7 +15,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
   }, [fetchUrl]);
 
   return (
-    <div className="row">
+    <div className={`row ${isLargeRow && "marginTop"}`}>
       <h2>{title}</h2>
       <div className="row_posters">
         {movies.map((movie) => (
