@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Nav.css";
+import logo from "./img/logo.png"
 
 function Nav() {
   const [show, handleShow] = useState(false);
@@ -18,7 +19,7 @@ function Nav() {
     <div className={`nav ${show && "nav__black"}`}>
       <img
         className="nav__logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Logo_Netflix.png"
+        src={logo}
         alt="netflix_logo"
       />
       <img
